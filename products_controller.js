@@ -18,7 +18,7 @@ module.exports = {
         dbInstance.read_product(id)
           .then(product => res.status(200).send(product))
           .catch(err => {
-            res.status(500).send({ errorMessage: "omething went wrong." });
+            res.status(500).send({errorMessage: "Something went wrong."});
             console.log(err)
           });
       },
@@ -29,7 +29,7 @@ module.exports = {
         dbInstance.read_products()
           .then(products => res.status(200).send(products))
           .catch(err => {
-            res.status(500).send({ errorMessage: "Something went wrong." });
+            res.status(500).send({errorMessage: "Something went wrong."});
             console.log(err)
           });
       },
